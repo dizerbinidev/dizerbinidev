@@ -68,6 +68,28 @@
 
         <div class="product-card">
           <h3 class="h3-card-home">
+            Shoesnetworld<a
+              href="https://github.com/dizerdev/shoesnetworld"
+              target="_blank"
+              rel="noreferrer noopener"
+              ><img src="./static/assets/github-icon.png" alt="logo-github"
+            /></a>
+          </h3>
+          <iframe
+            class="iframe"
+            src="https://shoesnetworld.com"
+            frameborder="0"
+          ></iframe>
+          <p>
+            Plataforma conceito B2B para o setor calçadista. Desenvolvida em
+            arquitetura BFF em Next.js, Node.js, React.js. Integrada com
+            serviços como Uploadthing como storage de imagens, Neon como host de
+            banco de dados PostgreSQL
+          </p>
+        </div>
+
+        <div class="product-card">
+          <h3 class="h3-card-home">
             Ecommerce Model<a
               href="https://github.com/dizerdev/ecommercemodel"
               target="_blank"
@@ -141,9 +163,9 @@
       </section>
 
       <script>
-        const toggle = document.querySelector('.main-img');
-        toggle.addEventListener('click', () => {
-          toggle.classList.toggle('active');
+        const toggle = document.querySelector(".main-img");
+        toggle.addEventListener("click", () => {
+          toggle.classList.toggle("active");
         });
       </script>
     </main>
@@ -179,49 +201,49 @@
       // Função para mudar o modo e armazenar o estado
       function toggleMode() {
         // Se o modo atual for 'dark', alterne para '' e vice-versa
-        const currentMode = document.body.classList.contains('dark')
-          ? ''
-          : 'dark';
+        const currentMode = document.body.classList.contains("dark")
+          ? ""
+          : "dark";
         const elementsToToggle = [
-          'header',
-          'footer',
-          'navbar',
-          'main-section',
-          'home-container',
-          'title-home',
+          "header",
+          "footer",
+          "navbar",
+          "main-section",
+          "home-container",
+          "title-home",
         ];
 
         elementsToToggle.forEach((elementId) => {
           const element = document.getElementById(elementId);
           if (element) {
-            element.classList.toggle('dark');
-            console.log('tentei alterar');
+            element.classList.toggle("dark");
+            console.log("tentei alterar");
           }
         });
 
         // Armazene o estado do modo no localStorage
-        localStorage.setItem('mode', currentMode);
+        localStorage.setItem("mode", currentMode);
       }
 
       // Verifique o localStorage ao carregar a página para definir o modo
-      document.addEventListener('DOMContentLoaded', function () {
-        const savedMode = localStorage.getItem('mode');
+      document.addEventListener("DOMContentLoaded", function () {
+        const savedMode = localStorage.getItem("mode");
         if (savedMode) {
           // Adiciona a classe ao corpo
           document.body.classList.add(savedMode);
-          const theme = document.getElementById('switch');
+          const theme = document.getElementById("switch");
           // Adiciona a classe aos elementos específicos
           const elementsToToggle = [
-            'header',
-            'footer',
-            'navbar',
-            'main-section',
-            'home-container',
-            'title-home',
+            "header",
+            "footer",
+            "navbar",
+            "main-section",
+            "home-container",
+            "title-home",
           ];
 
           // Verifica saveMode para a checkbox
-          if (savedMode == '') {
+          if (savedMode == "") {
             theme.checked = false;
           } else {
             theme.checked = true;
