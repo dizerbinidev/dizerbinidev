@@ -1,202 +1,195 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./static/template.css" />
-    <link rel="stylesheet" href="./static/portfolio.css" />
-    <title>Portfolio</title>
-  </head>
-  <body>
-    <div class="user-auth active"></div>
-    <header id="header" class="header">
-      <div class="logo-header">
-        <a href="./"
-          ><img
-            src="./static/assets/logo_dizer_dev.png"
-            alt="logo_diego_zerbini_dev"
-            height="50px"
-        /></a>
-        <h1>Diego Santos Dev</h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./static/template.css" />
+  <link rel="stylesheet" href="./static/portfolio.css" />
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <div class="user-auth active"></div>
+  <header id="header" class="header">
+    <div class="logo-header">
+      <a href="./"><img src="./static/assets/logo_dizer_dev.png" alt="logo_diego_zerbini_dev" height="50px" /></a>
+      <h1>Diego Santos Dev</h1>
+    </div>
+    <div class="title-header">
+      <h2>Software Engineer</h2>
+    </div>
+  </header>
+
+  <nav id="navbar" class="navbar">
+    <ul class="links">
+      <li class="button-header">
+        <a href="./about.html">Sobre mim</a>
+      </li>
+      <li class="button-header">
+        <a href="./certificates.html">Certificados</a>
+      </li>
+      <li class="button-header">
+        <a class="nav-active" href="./portfolio.html">Portfolio</a>
+      </li>
+      <li class="button-header"><a href="./videos.html">Videos</a></li>
+      <li class="button-header"><a href="./articles.html">Artigos</a></li>
+      <li class="button-header"><a href="./contact.html">Contato</a></li>
+    </ul>
+    <label class="switch-theme" onclick="toggleMode()">
+      <input type="checkbox" id="switch" />
+      <span class="slider-theme"></span>
+    </label>
+  </nav>
+
+  <main class="main">
+    <section class="main-container" id="main-container">
+      <h2 class="section-title">
+        <img src="./static/assets/repository-icon.jpg" alt="Ícone GitHub" />
+        Repositórios
+      </h2>
+
+      <div class="card-grid">
+        <!-- Card 1 -->
+        <article class="product-card">
+          <header class="card-header">
+            <h3>Ecommerce Model</h3>
+            <a href="https://github.com/dizerbinidev/ecommercemodel" target="_blank" rel="noopener noreferrer">
+              <img src="./static/assets/github-icon.png" alt="Link GitHub" />
+            </a>
+          </header>
+          <p>
+            Plataforma de ecommerce construída com Next.js v15, React v19 e
+            estilização via Tailwind CSS v4. Integra com Stripe e PayPal para
+            pagamentos online e utiliza bibliotecas como Shadcn/ui para UI
+            moderna e responsiva. Inicialmente baseada em MongoDB com
+            Mongoose, está sendo migrada para PostgreSQL com Node Postgres.
+            Possui painel administrativo para gerenciamento de produtos,
+            pedidos, usuários e conteúdo do site. Foco em arquitetura moderna
+            com tecnologias atualizadas e boa experiência para o usuário final
+            e administradores.
+          </p>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="product-card">
+          <header class="card-header">
+            <h3>Flask Ecommerce API</h3>
+            <a href="https://github.com/dizerbinidev/ecommerce-api" target="_blank" rel="noopener noreferrer">
+              <img src="./static/assets/github-icon.png" alt="Link GitHub" />
+            </a>
+          </header>
+          <p>
+            API de ecommerce desenvolvida com Flask, estruturada em
+            arquitetura RESTful e escrita em Python 3. Inclui endpoints
+            completos para autenticação, cadastro e gestão de usuários,
+            produtos, pedidos e pagamentos. Integrações com gateways como
+            Stripe e PayPal, além de suporte a tokens JWT e CORS configurado.
+            Utiliza PostgreSQL como banco de dados relacional, com SQLAlchemy
+            para ORM e migrações com Alembic. Foco em escalabilidade,
+            segurança e documentação clara via Swagger/OpenAPI.
+          </p>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="product-card">
+          <header class="card-header">
+            <h3>Algorithms Python</h3>
+            <a href="https://github.com/dizerbinidev/algoritmos-python" target="_blank" rel="noopener noreferrer">
+              <img src="./static/assets/github-icon.png" alt="Link GitHub" />
+            </a>
+          </header>
+          <p>
+            Repositório de algoritmos implementados em Python, com foco em
+            lógica computacional e inteligência artificial. Inclui algoritmos
+            de Lógica Difusa (com scikit-fuzzy), Ordenação, Busca e Otimização
+            (com mlrose). Utiliza bibliotecas como NumPy, SciPy e scikit-learn
+            para suporte matemático e análise de desempenho. O ambiente é
+            compatível com IPython e notebooks interativos, favorecendo testes
+            e visualizações. Organizado para fins didáticos e experimentais.
+          </p>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="product-card">
+          <header class="card-header">
+            <h3>Speedometer</h3>
+            <a href="https://github.com/dizerbinidev/speedometer" target="_blank" rel="noopener noreferrer">
+              <img src="./static/assets/github-icon.png" alt="Link GitHub" />
+            </a>
+          </header>
+          <p>
+            Projeto em JavaScript puro que utiliza a API de Geolocalização do
+            navegador para capturar a localização exata do usuário. Os dados
+            são armazenados localmente utilizando o Local Storage, garantindo
+            persistência entre sessões. Integra com o OpenStreetMap para
+            renderização de mapas interativos e componentes visuais
+            customizáveis. Foco em simplicidade, desempenho e independência de
+            frameworks externos. Ideal para aplicações que demandam
+            rastreamento geográfico leve e responsivo diretamente no
+            navegador.
+          </p>
+        </article>
       </div>
-      <div class="title-header">
-        <h2>Software Engineer</h2>
-      </div>
-    </header>
 
-    <nav id="navbar" class="navbar">
-      <ul class="links">
-        <li class="button-header">
-          <a href="./about.html">Sobre mim</a>
-        </li>
-        <li class="button-header">
-          <a href="./certificates.html">Certificados</a>
-        </li>
-        <li class="button-header">
-          <a class="nav-active" href="./portfolio.html">Portfolio</a>
-        </li>
-        <li class="button-header"><a href="./videos.html">Videos</a></li>
-        <li class="button-header"><a href="./articles.html">Artigos</a></li>
-        <li class="button-header"><a href="./contact.html">Contato</a></li>
-      </ul>
-      <label class="switch-theme" onclick="toggleMode()">
-        <input type="checkbox" id="switch" />
-        <span class="slider-theme"></span>
-      </label>
-    </nav>
-
-    <main class="main">
-      <section class="main-container" id="main-container">
-        <h2 class="section-title">
-          <img src="./static/assets/repository-icon.jpg" alt="Ícone GitHub" />
-          Repositórios
-        </h2>
-
-        <div class="card-grid">
-          <!-- Card 1 -->
-          <article class="product-card">
-            <header class="card-header">
-              <h3>Ecommerce Model</h3>
-              <a
-                href="https://github.com/dizerdev/ecommercemodel"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src="./static/assets/github-icon.png" alt="Link GitHub" />
-              </a>
-            </header>
-            <p>
-              Plataforma de ecommerce construída com Next.js v15, React v19 e
-              estilização via Tailwind CSS v4. Integra com Stripe e PayPal para
-              pagamentos online e utiliza bibliotecas como Shadcn/ui para UI
-              moderna e responsiva. Inicialmente baseada em MongoDB com
-              Mongoose, está sendo migrada para PostgreSQL com Node Postgres.
-              Possui painel administrativo para gerenciamento de produtos,
-              pedidos, usuários e conteúdo do site. Foco em arquitetura moderna
-              com tecnologias atualizadas e boa experiência para o usuário final
-              e administradores.
-            </p>
-          </article>
-
-          <!-- Card 2 -->
-          <article class="product-card">
-            <header class="card-header">
-              <h3>Flask Ecommerce API</h3>
-              <a
-                href="https://github.com/dizerdev/ecommerce-api"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src="./static/assets/github-icon.png" alt="Link GitHub" />
-              </a>
-            </header>
-            <p>
-              API de ecommerce desenvolvida com Flask, estruturada em
-              arquitetura RESTful e escrita em Python 3. Inclui endpoints
-              completos para autenticação, cadastro e gestão de usuários,
-              produtos, pedidos e pagamentos. Integrações com gateways como
-              Stripe e PayPal, além de suporte a tokens JWT e CORS configurado.
-              Utiliza PostgreSQL como banco de dados relacional, com SQLAlchemy
-              para ORM e migrações com Alembic. Foco em escalabilidade,
-              segurança e documentação clara via Swagger/OpenAPI.
-            </p>
-          </article>
-
-          <!-- Card 3 -->
-          <article class="product-card">
-            <header class="card-header">
-              <h3>Algorithms Python</h3>
-              <a
-                href="https://github.com/dizerdev/algoritmos-python"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src="./static/assets/github-icon.png" alt="Link GitHub" />
-              </a>
-            </header>
-            <p>
-              Repositório de algoritmos implementados em Python, com foco em
-              lógica computacional e inteligência artificial. Inclui algoritmos
-              de Lógica Difusa (com scikit-fuzzy), Ordenação, Busca e Otimização
-              (com mlrose). Utiliza bibliotecas como NumPy, SciPy e scikit-learn
-              para suporte matemático e análise de desempenho. O ambiente é
-              compatível com IPython e notebooks interativos, favorecendo testes
-              e visualizações. Organizado para fins didáticos e experimentais.
-            </p>
-          </article>
-
-          <!-- Card 4 -->
-          <article class="product-card">
-            <header class="card-header">
-              <h3>Speedometer</h3>
-              <a
-                href="https://github.com/dizerdev/speedometer"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src="./static/assets/github-icon.png" alt="Link GitHub" />
-              </a>
-            </header>
-            <p>
-              Projeto em JavaScript puro que utiliza a API de Geolocalização do
-              navegador para capturar a localização exata do usuário. Os dados
-              são armazenados localmente utilizando o Local Storage, garantindo
-              persistência entre sessões. Integra com o OpenStreetMap para
-              renderização de mapas interativos e componentes visuais
-              customizáveis. Foco em simplicidade, desempenho e independência de
-              frameworks externos. Ideal para aplicações que demandam
-              rastreamento geográfico leve e responsivo diretamente no
-              navegador.
-            </p>
-          </article>
-        </div>
-
-        <section class="contributions-section">
-          <h2 class="more-h1">Contribuições</h2>
-          <img
-            class="ghchart"
-            width="80%"
-            src="https://ghchart.rshah.org/dizerdev"
-            alt="Gráfico de Contribuições GitHub"
-          />
-        </section>
+      <section class="contributions-section">
+        <h2 class="more-h1">Contribuições</h2>
+        <img class="ghchart" width="80%" src="https://ghchart.rshah.org/dizerdev"
+          alt="Gráfico de Contribuições GitHub" />
       </section>
-    </main>
+    </section>
+  </main>
 
-    <footer id="footer" class="footer">
-      <div class="contact-info">
-        <p>Telefone: (11) 98692-1165</p>
-        <p>Email: zerbiniprogramador@gmail.com</p>
-      </div>
-      <div class="social-links">
-        <a
-          href="https://github.com/dizerdev"
-          target="_blank"
-          rel="noreferrer noopener"
-          ><img src="./static/assets/github-icon.png" alt="Github"
-        /></a>
-        <a
-          href="https://www.linkedin.com/in/dizerdev/"
-          target="_blank"
-          rel="noreferrer noopener"
-          ><img src="./static/assets/linkedin-icon.png" alt="Linkedin"
-        /></a>
-        <a
-          href="https://wa.me/message/MTG3FKJWBA53L1"
-          target="_blank"
-          rel="noreferrer noopener"
-          ><img src="./static/assets/whatsapp-icon.png" alt="Instagram"
-        /></a>
-        <!-- Adicione mais links para redes sociais conforme necessário -->
-      </div>
-    </footer>
-    <script defer>
-      // Função para mudar o modo e armazenar o estado
-      function toggleMode() {
-        // Se o modo atual for 'dark', alterne para 'light' e vice-versa
-        const currentMode = document.body.classList.contains('dark')
-          ? ''
-          : 'dark';
+  <footer id="footer" class="footer">
+    <div class="contact-info">
+      <p>Telefone: (11) 98692-1165</p>
+      <p>Email: zerbiniprogramador@gmail.com</p>
+      <p>CNPJ: 27.741.631/0001-18</p>
+    </div>
+    <div class="social-links">
+      <a href="https://github.com/dizerbinidev" target="_blank" rel="noreferrer noopener"><img
+          src="./static/assets/github-icon.png" alt="Github" /></a>
+      <a href="https://www.linkedin.com/in/diego-zerbini-software-engineer/" target="_blank"
+        rel="noreferrer noopener"><img src="./static/assets/linkedin-icon.png" alt="Linkedin" /></a>
+      <a href="https://wa.me/message/MTG3FKJWBA53L1" target="_blank" rel="noreferrer noopener"><img
+          src="./static/assets/whatsapp-icon.png" alt="Instagram" /></a>
+      <!-- Adicione mais links para redes sociais conforme necessário -->
+    </div>
+  </footer>
+  <script defer>
+    // Função para mudar o modo e armazenar o estado
+    function toggleMode() {
+      // Se o modo atual for 'dark', alterne para 'light' e vice-versa
+      const currentMode = document.body.classList.contains('dark')
+        ? ''
+        : 'dark';
+      const elementsToToggle = [
+        'header',
+        'footer',
+        'navbar',
+        'main-container',
+      ];
+
+      elementsToToggle.forEach((elementId) => {
+        const element = document.getElementById(elementId);
+        if (element) {
+          element.classList.toggle('dark');
+          console.log('tentei alterar');
+        }
+      });
+
+      // Armazene o estado do modo no localStorage
+      localStorage.setItem('mode', currentMode);
+    }
+
+    // Verifique o localStorage ao carregar a página para definir o modo
+    document.addEventListener('DOMContentLoaded', function () {
+      const savedMode = localStorage.getItem('mode');
+      if (savedMode) {
+        // Adiciona a classe ao corpo
+        document.body.classList.add(savedMode);
+        const theme = document.getElementById('switch');
+        // Adiciona a classe aos elementos específicos
         const elementsToToggle = [
           'header',
           'footer',
@@ -204,60 +197,34 @@
           'main-container',
         ];
 
+        // Verifica saveMode para a checkbox
+        if (savedMode == '') {
+          theme.checked = false;
+        } else {
+          theme.checked = true;
+        }
         elementsToToggle.forEach((elementId) => {
           const element = document.getElementById(elementId);
           if (element) {
-            element.classList.toggle('dark');
-            console.log('tentei alterar');
+            element.classList.add(savedMode);
           }
         });
-
-        // Armazene o estado do modo no localStorage
-        localStorage.setItem('mode', currentMode);
       }
+    });
 
-      // Verifique o localStorage ao carregar a página para definir o modo
-      document.addEventListener('DOMContentLoaded', function () {
-        const savedMode = localStorage.getItem('mode');
-        if (savedMode) {
-          // Adiciona a classe ao corpo
-          document.body.classList.add(savedMode);
-          const theme = document.getElementById('switch');
-          // Adiciona a classe aos elementos específicos
-          const elementsToToggle = [
-            'header',
-            'footer',
-            'navbar',
-            'main-container',
-          ];
+    const theme = document.getElementById('switch');
+    const header = document.getElementById('header');
+    const footer = document.getElementById('footer');
+    const navbar = document.getElementById('navbar');
+    const mainPortfolio = document.getElementById('main-container');
 
-          // Verifica saveMode para a checkbox
-          if (savedMode == '') {
-            theme.checked = false;
-          } else {
-            theme.checked = true;
-          }
-          elementsToToggle.forEach((elementId) => {
-            const element = document.getElementById(elementId);
-            if (element) {
-              element.classList.add(savedMode);
-            }
-          });
-        }
-      });
+    theme.addEventListener('click', () => {
+      header.classList.toggle('dark');
+      footer.classList.toggle('dark');
+      navbar.classList.toggle('dark');
+      mainPortfolio.classList.toggle('dark');
+    });
+  </script>
+</body>
 
-      const theme = document.getElementById('switch');
-      const header = document.getElementById('header');
-      const footer = document.getElementById('footer');
-      const navbar = document.getElementById('navbar');
-      const mainPortfolio = document.getElementById('main-container');
-
-      theme.addEventListener('click', () => {
-        header.classList.toggle('dark');
-        footer.classList.toggle('dark');
-        navbar.classList.toggle('dark');
-        mainPortfolio.classList.toggle('dark');
-      });
-    </script>
-  </body>
 </html>

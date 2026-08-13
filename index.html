@@ -1,209 +1,226 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./static/template.css" />
-    <link rel="stylesheet" href="./static/index.css" />
-    <title>Página Inicial</title>
-  </head>
-  <body>
-    <div class="user-auth active"></div>
-    <header id="header" class="header">
-      <div class="logo-header">
-        <a href="./"
-          ><img
-            src="./static/assets/logo_dizer_dev.png"
-            alt="logo_diego_santos_dev"
-            height="50px"
-        /></a>
-        <h1>Diego Santos Dev</h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./static/template.css" />
+  <link rel="stylesheet" href="./static/index.css" />
+  <title>Página Inicial</title>
+</head>
+
+<body>
+  <div class="user-auth active"></div>
+  <header id="header" class="header">
+    <div class="logo-header">
+      <a href="./"><img src="./static/assets/logo_dizer_dev.png" alt="logo_diego_santos_dev" height="50px" /></a>
+      <h1>Diego Santos Dev</h1>
+    </div>
+    <div class="title-header">
+      <h2>Software Engineer</h2>
+    </div>
+  </header>
+
+  <nav id="navbar" class="navbar">
+    <ul class="links">
+      <li class="button-header"><a href="./about.html">Sobre mim</a></li>
+      <li class="button-header">
+        <a href="./certificates.html">Certificados</a>
+      </li>
+      <li class="button-header"><a href="./portfolio.html">Portfolio</a></li>
+      <li class="button-header"><a href="./videos.html">Videos</a></li>
+      <li class="button-header"><a href="./articles.html">Artigos</a></li>
+      <li class="button-header"><a href="./contact.html">Contato</a></li>
+    </ul>
+    <label class="switch-theme">
+      <input type="checkbox" id="switch" onclick="toggleMode()" />
+      <span class="slider-theme"></span>
+    </label>
+  </nav>
+
+  <main>
+    <section id="home-container" class="home-container">
+      <h1 id="title-home" class="title-home">Seja bem-vindo!</h1>
+      <div class="logo-home">
+        <div class="main-img">
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+        </div>
+        <img src="./static/assets/logo_dizer_dev.png" alt="dizerbinidev" />
       </div>
-      <div class="title-header">
-        <h2>Software Engineer</h2>
+    </section>
+    <section id="main-section" class="main-section">
+      <h2 class="h2-card-home">
+        <img src="./static/assets/project-icon.png" alt="logo-github" />Projetos realizados
+      </h2>
+
+      <div class="product-card">
+        <h3 class="h3-card-home">
+          Pet Guide<a href="https://github.com/dizerbinidev" target="_blank" rel="noreferrer noopener"><img
+              src="./static/assets/github-icon.png" alt="logo-github" /></a>
+        </h3>
+        <iframe class="iframe-mobile" width="500" src="https://petguide.app.br/" frameborder="0"></iframe>
+        <p>
+          Plataforma marketplace para fornecedores e prestadores de serviços
+          para animais de estimação.
+        </p>
       </div>
-    </header>
 
-    <nav id="navbar" class="navbar">
-      <ul class="links">
-        <li class="button-header"><a href="./about.html">Sobre mim</a></li>
-        <li class="button-header">
-          <a href="./certificates.html">Certificados</a>
-        </li>
-        <li class="button-header"><a href="./portfolio.html">Portfolio</a></li>
-        <li class="button-header"><a href="./videos.html">Videos</a></li>
-        <li class="button-header"><a href="./articles.html">Artigos</a></li>
-        <li class="button-header"><a href="./contact.html">Contato</a></li>
-      </ul>
-      <label class="switch-theme">
-        <input type="checkbox" id="switch" onclick="toggleMode()" />
-        <span class="slider-theme"></span>
-      </label>
-    </nav>
-
-    <main>
-      <section id="home-container" class="home-container">
-        <h1 id="title-home" class="title-home">Seja bem-vindo!</h1>
-        <div class="logo-home">
-          <div class="main-img">
-            <span class="circle"></span>
-            <span class="circle"></span>
-            <span class="circle"></span>
-            <span class="circle"></span>
-            <span class="circle"></span>
-            <span class="circle"></span>
-            <span class="circle"></span>
-            <span class="circle"></span>
-          </div>
-          <img src="./static/assets/logo_dizer_dev.png" alt="dizerdev" />
-        </div>
-      </section>
-      <section id="main-section" class="main-section">
-        <h2 class="h2-card-home">
-          <img
-            src="./static/assets/project-icon.png"
-            alt="logo-github"
-          />Projetos realizados
-        </h2>
-
-        <div class="product-card">
-          <h3 class="h3-card-home">
-            Shoesnetworld<a
-              href="https://github.com/dizerdev/shoesnetworld"
-              target="_blank"
-              rel="noreferrer noopener"
-              ><img src="./static/assets/github-icon.png" alt="logo-github"
-            /></a>
-          </h3>
-          <iframe
-            class="iframe"
-            src="https://shoesnetworld.com"
-            frameborder="0"
-          ></iframe>
-          <p>
-            Plataforma conceito B2B para o setor calçadista. Desenvolvida em
-            arquitetura BFF em Next.js, Node.js, React.js. Integrada com
-            serviços como Uploadthing como storage de imagens, Neon como host de
-            banco de dados PostgreSQL
-          </p>
-        </div>
-
-        <div class="product-card">
-          <h3 class="h3-card-home">
-            Ecommerce Model<a
-              href="https://github.com/dizerdev/ecommercemodel"
-              target="_blank"
-              rel="noreferrer noopener"
-              ><img src="./static/assets/github-icon.png" alt="logo-github"
-            /></a>
-          </h3>
-          <iframe
-            class="iframe"
-            src="https://ecommercemodel.vercel.app/"
-            frameborder="0"
-          ></iframe>
-          <p>
-            Plataforma ecommerce com integração Stripe e Paypal, que utiliza o
-            framework Next.js v15 para contruir um projeto em base Node.js 18+,
-            estilização em Tailwind CSS v4, React.js v19, e diversas outras
-            bibliotecas complementares ao React e Next, como Shadcn/ui, que
-            utiliza sistema de componentes de interface, simples de estilizar e
-            construir um site moderno e responsivo. Atualmente utiliza MongoDB e
-            Mongoose ODM, mas esta sendo migrado a utilizar PostgreSQL e Node
-            Postgres. O projeto também conta com uma interface para usuarios
-            "Admin", que oferece controle de cadastro de produtos, de pedidos,
-            usuarios, de páginas publicas do site e de configurações internas.
-          </p>
-        </div>
-
-        <div class="product-card">
-          <h3 class="h3-card-home">
-            Speedometer (Mobile)<a
-              href="https://github.com/dizerdev/speedometer"
-              target="_blank"
-              rel="noreferrer noopener"
-              ><img src="./static/assets/github-icon.png" alt="logo-github"
-            /></a>
-          </h3>
-          <iframe
-            class="iframe-mobile"
-            width="500"
-            src="https://dizerdev.github.io/speedometer/"
-            frameborder="0"
-          ></iframe>
-          <p>
-            Projeto desenvolvido em JavaScript puro, que contém o algoritmo
-            utilizado para medir a exata localização a partir do Geolocation do
-            browser e do Local Storage para armazenar os dados. Integra com o
-            Open Street Map, que oferece componentes de interface para diversos
-            ipos de mapa.
-          </p>
-        </div>
-
-        <div class="product-card">
-          <h3 class="h3-card-home">
-            Todo List<a
-              href="https://github.com/dizerdev/todo-list"
-              target="_blank"
-              rel="noreferrer noopener"
-              ><img src="./static/assets/github-icon.png" alt="logo-github"
-            /></a>
-          </h3>
-          <iframe
-            class="iframe"
-            src="https://dizerdev.github.io/todo-list/"
-            frameborder="0"
-          ></iframe>
-          <p>
-            Site estático para cadastrar lista de tarefas diárias, com um
-            relógio.
-          </p>
-        </div>
-        <h1 class="more-h1">Mais em breve...</h1>
-      </section>
-
-      <script>
-        const toggle = document.querySelector(".main-img");
-        toggle.addEventListener("click", () => {
-          toggle.classList.toggle("active");
-        });
-      </script>
-    </main>
-    <!-------------------------------------------------------------------->
-    <footer id="footer" class="footer">
-      <div class="contact-info">
-        <p>Telefone: (11) 98692-1165</p>
-        <p>Email: zerbiniprogramador@gmail.com</p>
+      <div class="product-card">
+        <h3 class="h3-card-home">
+          Shoesnetworld<a href="https://github.com/dizerbinidev/b2b-connect-platform" target="_blank"
+            rel="noreferrer noopener"><img src="./static/assets/github-icon.png" alt="logo-github" /></a>
+        </h3>
+        <iframe class="iframe" src="https://shoesnetworld.vercel.app/" frameborder="0"></iframe>
+        <p>
+          Plataforma conceito B2B para o setor calçadista. Desenvolvida em
+          arquitetura BFF em Next.js, Node.js, React.js. Integrada com
+          serviços como Uploadthing como storage de imagens, Neon como host de
+          banco de dados PostgreSQL
+        </p>
       </div>
-      <div class="social-links">
-        <a
-          href="https://github.com/dizerdev"
-          target="_blank"
-          rel="noreferrer noopener"
-          ><img src="./static/assets/github-icon.png" alt="Github"
-        /></a>
-        <a
-          href="https://www.linkedin.com/in/dizerdev/"
-          target="_blank"
-          rel="noreferrer noopener"
-          ><img src="./static/assets/linkedin-icon.png" alt="Linkedin"
-        /></a>
-        <a
-          href="https://wa.me/message/MTG3FKJWBA53L1"
-          target="_blank"
-          rel="noreferrer noopener"
-          ><img src="./static/assets/whatsapp-icon.png" alt="Instagram"
-        /></a>
-      </div>
-    </footer>
 
-    <script defer>
-      // Função para mudar o modo e armazenar o estado
-      function toggleMode() {
-        // Se o modo atual for 'dark', alterne para '' e vice-versa
-        const currentMode = document.body.classList.contains("dark")
-          ? ""
-          : "dark";
+      <div class="product-card">
+        <h3 class="h3-card-home">
+          Adega Hope<a href="https://github.com/dizerbinidev" target="_blank" rel="noreferrer noopener"><img
+              src="./static/assets/github-icon.png" alt="logo-github" /></a>
+        </h3>
+        <iframe class="iframe" src="https://adegahope.com.br/" frameborder="0"></iframe>
+        <p>
+          Plataforma marketplace para fornecedores e prestadores de serviços
+          para animais de estimação.
+        </p>
+      </div>
+
+      <div class="product-card">
+        <h3 class="h3-card-home">
+          LabelCraft<a href="https://github.com/dizerbinidev/labelcraft" target="_blank" rel="noreferrer noopener"><img
+              src="./static/assets/github-icon.png" alt="logo-github" /></a>
+        </h3>
+        <iframe class="iframe" src="https://labelcraft.com.br" frameborder="0"></iframe>
+        <p>
+          Plataforma para geração de etiquetas ZPL personalizadas a partir do
+          processamento de arquivos .xlsx, sistema de etiquetas com rastreio inteligente
+          e cobrança de assinatura mensal.
+        </p>
+      </div>
+
+      <div class="product-card">
+        <h3 class="h3-card-home">
+          Ecommerce Model<a href="https://github.com/dizerbinidev/ecommercemodel" target="_blank"
+            rel="noreferrer noopener"><img src="./static/assets/github-icon.png" alt="logo-github" /></a>
+        </h3>
+        <iframe class="iframe" src="https://ecommercemodel.vercel.app/" frameborder="0"></iframe>
+        <p>
+          Plataforma ecommerce com integração Stripe e Paypal, que utiliza o
+          framework Next.js v15 para contruir um projeto em base Node.js 18+,
+          estilização em Tailwind CSS v4, React.js v19, e diversas outras
+          bibliotecas complementares ao React e Next, como Shadcn/ui, que
+          utiliza sistema de componentes de interface, simples de estilizar e
+          construir um site moderno e responsivo. Atualmente utiliza MongoDB e
+          Mongoose ODM, mas esta sendo migrado a utilizar PostgreSQL e Node
+          Postgres. O projeto também conta com uma interface para usuarios
+          "Admin", que oferece controle de cadastro de produtos, de pedidos,
+          usuarios, de páginas publicas do site e de configurações internas.
+        </p>
+      </div>
+
+      <div class="product-card">
+        <h3 class="h3-card-home">
+          Speedometer (Mobile)<a href="https://github.com/dizerbinidev/speedometer" target="_blank"
+            rel="noreferrer noopener"><img src="./static/assets/github-icon.png" alt="logo-github" /></a>
+        </h3>
+        <iframe class="iframe-mobile" width="500" src="https://dizerbinidev.github.io/speedometer/"
+          frameborder="0"></iframe>
+        <p>
+          Projeto desenvolvido em JavaScript puro, que contém o algoritmo
+          utilizado para medir a exata localização a partir do Geolocation do
+          browser e do Local Storage para armazenar os dados. Integra com o
+          Open Street Map, que oferece componentes de interface para diversos
+          ipos de mapa.
+        </p>
+      </div>
+
+      <div class="product-card">
+        <h3 class="h3-card-home">
+          Todo List<a href="https://github.com/dizerbinidev/todo-list" target="_blank" rel="noreferrer noopener"><img
+              src="./static/assets/github-icon.png" alt="logo-github" /></a>
+        </h3>
+        <iframe class="iframe" src="https://dizerbinidev.github.io/todo-list/" frameborder="0"></iframe>
+        <p>
+          Site estático para cadastrar lista de tarefas diárias, com um
+          relógio.
+        </p>
+      </div>
+      <h1 class="more-h1">Mais em breve...</h1>
+    </section>
+
+    <script>
+      const toggle = document.querySelector(".main-img");
+      toggle.addEventListener("click", () => {
+        toggle.classList.toggle("active");
+      });
+    </script>
+  </main>
+  <!-------------------------------------------------------------------->
+  <footer id="footer" class="footer">
+    <div class="contact-info">
+      <p>Telefone: (11) 98692-1165</p>
+      <p>Email: zerbiniprogramador@gmail.com</p>
+      <p>CNPJ: 27.741.631/0001-18</p>
+    </div>
+    <div class="social-links">
+      <a href="https://github.com/dizerbinidev" target="_blank" rel="noreferrer noopener"><img
+          src="./static/assets/github-icon.png" alt="Github" /></a>
+      <a href="https://www.linkedin.com/in/dizerbinidev/" target="_blank" rel="noreferrer noopener"><img
+          src="./static/assets/linkedin-icon.png" alt="Linkedin" /></a>
+      <a href="https://wa.me/message/MTG3FKJWBA53L1" target="_blank" rel="noreferrer noopener"><img
+          src="./static/assets/whatsapp-icon.png" alt="Instagram" /></a>
+    </div>
+  </footer>
+
+  <script defer>
+    // Função para mudar o modo e armazenar o estado
+    function toggleMode() {
+      // Se o modo atual for 'dark', alterne para '' e vice-versa
+      const currentMode = document.body.classList.contains("dark")
+        ? ""
+        : "dark";
+      const elementsToToggle = [
+        "header",
+        "footer",
+        "navbar",
+        "main-section",
+        "home-container",
+        "title-home",
+      ];
+
+      elementsToToggle.forEach((elementId) => {
+        const element = document.getElementById(elementId);
+        if (element) {
+          element.classList.toggle("dark");
+          console.log("tentei alterar");
+        }
+      });
+
+      // Armazene o estado do modo no localStorage
+      localStorage.setItem("mode", currentMode);
+    }
+
+    // Verifique o localStorage ao carregar a página para definir o modo
+    document.addEventListener("DOMContentLoaded", function () {
+      const savedMode = localStorage.getItem("mode");
+      if (savedMode) {
+        // Adiciona a classe ao corpo
+        document.body.classList.add(savedMode);
+        const theme = document.getElementById("switch");
+        // Adiciona a classe aos elementos específicos
         const elementsToToggle = [
           "header",
           "footer",
@@ -213,49 +230,21 @@
           "title-home",
         ];
 
+        // Verifica saveMode para a checkbox
+        if (savedMode == "") {
+          theme.checked = false;
+        } else {
+          theme.checked = true;
+        }
         elementsToToggle.forEach((elementId) => {
           const element = document.getElementById(elementId);
           if (element) {
-            element.classList.toggle("dark");
-            console.log("tentei alterar");
+            element.classList.add(savedMode);
           }
         });
-
-        // Armazene o estado do modo no localStorage
-        localStorage.setItem("mode", currentMode);
       }
+    });
+  </script>
+</body>
 
-      // Verifique o localStorage ao carregar a página para definir o modo
-      document.addEventListener("DOMContentLoaded", function () {
-        const savedMode = localStorage.getItem("mode");
-        if (savedMode) {
-          // Adiciona a classe ao corpo
-          document.body.classList.add(savedMode);
-          const theme = document.getElementById("switch");
-          // Adiciona a classe aos elementos específicos
-          const elementsToToggle = [
-            "header",
-            "footer",
-            "navbar",
-            "main-section",
-            "home-container",
-            "title-home",
-          ];
-
-          // Verifica saveMode para a checkbox
-          if (savedMode == "") {
-            theme.checked = false;
-          } else {
-            theme.checked = true;
-          }
-          elementsToToggle.forEach((elementId) => {
-            const element = document.getElementById(elementId);
-            if (element) {
-              element.classList.add(savedMode);
-            }
-          });
-        }
-      });
-    </script>
-  </body>
 </html>

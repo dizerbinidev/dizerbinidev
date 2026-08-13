@@ -1,212 +1,190 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./static/template.css" />
-    <link rel="stylesheet" href="./static/about.css" />
-    <title>Sobre Mim</title>
-  </head>
-  <body>
-    <div class="user-auth active"></div>
-    <header id="header" class="header">
-      <div class="logo-header">
-        <a href="./"
-          ><img
-            src="./static/assets/logo_dizer_dev.png"
-            alt="logo_diego_zerbini_dev"
-            height="50px"
-        /></a>
-        <h1>Diego Santos Dev</h1>
-      </div>
-      <div class="title-header">
-        <h2>Software Engineer</h2>
-      </div>
-    </header>
-    <nav id="navbar" class="navbar">
-      <ul class="links">
-        <li class="button-header">
-          <a class="nav-active" href="./about.html">Sobre mim</a>
-        </li>
-        <li class="button-header">
-          <a href="./certificates.html">Certificados</a>
-        </li>
-        <li class="button-header"><a href="./portfolio.html">Portfolio</a></li>
-        <li class="button-header"><a href="./videos.html">Videos</a></li>
-        <li class="button-header"><a href="./articles.html">Artigos</a></li>
-        <li class="button-header"><a href="./contact.html">Contato</a></li>
-      </ul>
-      <label class="switch-theme" onclick="toggleMode()">
-        <input type="checkbox" id="switch" />
-        <span class="slider-theme"></span>
-      </label>
-    </nav>
-    <main id="main-about">
-      <div id="container-about" class="container-about">
-        <img
-          src="./static/assets/PERFIL NOVO 2.jpg"
-          alt="Sua Foto"
-          class="profile-image-about"
-        />
-        <h2>Diego Zerbini de Carvalho Santos</h2>
-        <p>
-          Tenho 32 anos, nascido e criado em São Paulo - Capital e apaixonado
-          por tecnologia. Formado em Analise e Desenvolvimento de Sistemas pela
-          Faculdade Impacta de Tecnologia. Atualmente cursando MBA em Engenharia
-          de Software
-          <a
-            style="
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./static/template.css" />
+  <link rel="stylesheet" href="./static/about.css" />
+  <title>Sobre Mim</title>
+</head>
+
+<body>
+  <div class="user-auth active"></div>
+  <header id="header" class="header">
+    <div class="logo-header">
+      <a href="./"><img src="./static/assets/logo_dizer_dev.png" alt="logo_diego_zerbini_dev" height="50px" /></a>
+      <h1>Diego Santos Dev</h1>
+    </div>
+    <div class="title-header">
+      <h2>Software Engineer</h2>
+    </div>
+  </header>
+  <nav id="navbar" class="navbar">
+    <ul class="links">
+      <li class="button-header">
+        <a class="nav-active" href="./about.html">Sobre mim</a>
+      </li>
+      <li class="button-header">
+        <a href="./certificates.html">Certificados</a>
+      </li>
+      <li class="button-header"><a href="./portfolio.html">Portfolio</a></li>
+      <li class="button-header"><a href="./videos.html">Videos</a></li>
+      <li class="button-header"><a href="./articles.html">Artigos</a></li>
+      <li class="button-header"><a href="./contact.html">Contato</a></li>
+    </ul>
+    <label class="switch-theme" onclick="toggleMode()">
+      <input type="checkbox" id="switch" />
+      <span class="slider-theme"></span>
+    </label>
+  </nav>
+  <main id="main-about">
+    <div id="container-about" class="container-about">
+      <img src="./static/assets/PERFIL NOVO 2.jpg" alt="Sua Foto" class="profile-image-about" />
+      <h2>Diego Zerbini de Carvalho Santos</h2>
+      <p>
+        Tenho 32 anos, nascido e criado em São Paulo - Capital e apaixonado
+        por tecnologia. Formado em Analise e Desenvolvimento de Sistemas pela
+        Faculdade Impacta de Tecnologia. Atualmente cursando MBA em Engenharia
+        de Software
+        <a style="
               text-decoration: blink;
               text-decoration-color: gray;
               text-decoration-style: wavy;
-            "
-            href="https://mba.impacta.edu.br/mbas/engenharia-de-software/"
-            target="_blank"
-            rel="noreferrer noopener"
-            >Engenharia de Software</a
-          >.
-        </p>
-        <h3>Experiência</h3>
-        <p>
-          Analista de Software com expertise em regras de negócio para
-          plataformas de e-commerce, OMS, WMS e TMS, além de sólida conhecimento
-          de conceitos OMNIchannel no contexto B2C e B2B. Atualmente, estudante
-          de MBA em Arquitetura de Soluções Digitais. Possuo grande conhecimento
-          no desenvolvimento de APIs RESTful seguras e escaláveis, aplicando
-          arquitetura MVC e orientação à divisão de instâncias por serviços
-          (service-based architecture). Sou proficiente em stacks de tecnologia
-          como: JavaScript ES6+, Node v18+, React v18+, Next v13+, Jest, Python
-          3, Boto3, AWS, RDS, Google Cloud, Docker, Kubernetes, Git e GitHub.
-          Experiência em CI/CD com GitHub Actions e Vercel. Gestão de backlogs
-          utilizando Gitlab. Meus projetos seguem boas práticas de
-          desenvolvimento, como clean code, uso de linters, testes
-          automatizados, controle e versionamento de dependências.
-          <br />
-        </p>
+            " href="https://mba.impacta.edu.br/mbas/engenharia-de-software/" target="_blank"
+          rel="noreferrer noopener">Engenharia de Software</a>.
+      </p>
+      <h3>Experiência</h3>
+      <p>
+        Analista de Software com expertise em regras de negócio para
+        plataformas de e-commerce, OMS, WMS e TMS, além de sólida conhecimento
+        de conceitos OMNIchannel no contexto B2C e B2B. Atualmente, estudante
+        de MBA em Arquitetura de Soluções Digitais. Possuo grande conhecimento
+        no desenvolvimento de APIs RESTful seguras e escaláveis, aplicando
+        arquitetura MVC e orientação à divisão de instâncias por serviços
+        (service-based architecture). Sou proficiente em stacks de tecnologia
+        como: JavaScript ES6+, Node v18+, React v18+, Next v13+, Jest, Python
+        3, Boto3, AWS, RDS, Google Cloud, Docker, Kubernetes, Git e GitHub.
+        Experiência em CI/CD com GitHub Actions e Vercel. Gestão de backlogs
+        utilizando Gitlab. Meus projetos seguem boas práticas de
+        desenvolvimento, como clean code, uso de linters, testes
+        automatizados, controle e versionamento de dependências.
         <br />
-        <h3>Quem é Diego Zerbini?</h3>
-        <p>
-          Com uma década de experiência em vendas e atendimento ao cliente,
-          sendo seis anos como corretor de imóveis autônomo, estou trilhando uma
-          nova jornada como desenvolvedor de soluções em softwares.
-          <br />
-        </p>
-        <h3>Missão</h3>
-        <p>
-          Minha maior missão é propor soluções inovadoras para problemas ou para
-          a melhoria de processos, sempre com humildade e respeito. Atualmente,
-          busco alcançar esses objetivos por meio do desenvolvimento de código
-          eficiente e escalável. Soft-skills como flexibilidade cognitiva,
-          pensamento crítico, criatividade, relacionamento interpessoal,
-          empatia, inteligência emocional, comunicação assertiva e gestão de
-          conflitos complementam meu perfil e me ajudam a construir relações
-          saudáveis e produtivas com colegas, clientes e parceiros.
-        </p>
-      </div>
-    </main>
+      </p>
+      <br />
+      <h3>Quem é Diego Zerbini?</h3>
+      <p>
+        Com uma década de experiência em vendas e atendimento ao cliente,
+        sendo seis anos como corretor de imóveis autônomo, estou trilhando uma
+        nova jornada como desenvolvedor de soluções em softwares.
+        <br />
+      </p>
+      <h3>Missão</h3>
+      <p>
+        Minha maior missão é propor soluções inovadoras para problemas ou para
+        a melhoria de processos, sempre com humildade e respeito. Atualmente,
+        busco alcançar esses objetivos por meio do desenvolvimento de código
+        eficiente e escalável. Soft-skills como flexibilidade cognitiva,
+        pensamento crítico, criatividade, relacionamento interpessoal,
+        empatia, inteligência emocional, comunicação assertiva e gestão de
+        conflitos complementam meu perfil e me ajudam a construir relações
+        saudáveis e produtivas com colegas, clientes e parceiros.
+      </p>
+    </div>
+  </main>
 
-    <footer id="footer" class="footer">
-      <div class="contact-info">
-        <p>Telefone: (11) 98692-1165</p>
-        <p>Email: zerbiniprogramador@gmail.com</p>
-      </div>
-      <div class="social-links">
-        <a
-          href="https://github.com/dizerdev"
-          target="_blank"
-          rel="noreferrer noopener"
-          ><img src="./static/assets/github-icon.png" alt="Github"
-        /></a>
-        <a
-          href="https://www.linkedin.com/in/dizerdev/"
-          target="_blank"
-          rel="noreferrer noopener"
-          ><img src="./static/assets/linkedin-icon.png" alt="Linkedin"
-        /></a>
-        <a
-          href="https://wa.me/message/MTG3FKJWBA53L1"
-          target="_blank"
-          rel="noreferrer noopener"
-          ><img src="./static/assets/whatsapp-icon.png" alt="Instagram"
-        /></a>
-        <!-- Adicione mais links para redes sociais conforme necessário -->
-      </div>
-    </footer>
+  <footer id="footer" class="footer">
+    <div class="contact-info">
+      <p>Telefone: (11) 98692-1165</p>
+      <p>Email: zerbiniprogramador@gmail.com</p>
+      <p>CNPJ: 27.741.631/0001-18</p>
+    </div>
+    <div class="social-links">
+      <a href="https://github.com/dizerbinidev" target="_blank" rel="noreferrer noopener"><img
+          src="./static/assets/github-icon.png" alt="Github" /></a>
+      <a href="https://www.linkedin.com/in/diego-zerbini-software-engineer/" target="_blank"
+        rel="noreferrer noopener"><img src="./static/assets/linkedin-icon.png" alt="Linkedin" /></a>
+      <a href="https://wa.me/message/MTG3FKJWBA53L1" target="_blank" rel="noreferrer noopener"><img
+          src="./static/assets/whatsapp-icon.png" alt="Instagram" /></a>
+      <!-- Adicione mais links para redes sociais conforme necessário -->
+    </div>
+  </footer>
 
-    <script defer>
-      // Função para mudar o modo e armazenar o estado
-      function toggleMode() {
-        // Se o modo atual for 'dark', alterne para 'light' e vice-versa
-        const currentMode = document.body.classList.contains('dark')
-          ? ''
-          : 'dark';
+  <script defer>
+    // Função para mudar o modo e armazenar o estado
+    function toggleMode() {
+      // Se o modo atual for 'dark', alterne para 'light' e vice-versa
+      const currentMode = document.body.classList.contains('dark')
+        ? ''
+        : 'dark';
+      const elementsToToggle = [
+        'header',
+        'footer',
+        'navbar',
+        'main-section',
+        'home-container',
+        'title-home',
+      ];
+
+      elementsToToggle.forEach((elementId) => {
+        const element = document.getElementById(elementId);
+        if (element) {
+          element.classList.toggle('dark');
+          console.log('tentei alterar');
+        }
+      });
+
+      // Armazene o estado do modo no localStorage
+      localStorage.setItem('mode', currentMode);
+    }
+
+    // Verifique o localStorage ao carregar a página para definir o modo
+    document.addEventListener('DOMContentLoaded', function () {
+      const savedMode = localStorage.getItem('mode');
+      if (savedMode) {
+        // Adiciona a classe ao corpo
+        document.body.classList.add(savedMode);
+        const theme = document.getElementById('switch');
+        // Adiciona a classe aos elementos específicos
         const elementsToToggle = [
           'header',
           'footer',
           'navbar',
           'main-section',
-          'home-container',
+          'container-about',
           'title-home',
+          'main-about',
         ];
 
+        // Verifica saveMode para a checkbox
+        if (savedMode == '') {
+          theme.checked = false;
+        } else {
+          theme.checked = true;
+        }
         elementsToToggle.forEach((elementId) => {
           const element = document.getElementById(elementId);
           if (element) {
-            element.classList.toggle('dark');
-            console.log('tentei alterar');
+            element.classList.add(savedMode);
           }
         });
-
-        // Armazene o estado do modo no localStorage
-        localStorage.setItem('mode', currentMode);
       }
+    });
 
-      // Verifique o localStorage ao carregar a página para definir o modo
-      document.addEventListener('DOMContentLoaded', function () {
-        const savedMode = localStorage.getItem('mode');
-        if (savedMode) {
-          // Adiciona a classe ao corpo
-          document.body.classList.add(savedMode);
-          const theme = document.getElementById('switch');
-          // Adiciona a classe aos elementos específicos
-          const elementsToToggle = [
-            'header',
-            'footer',
-            'navbar',
-            'main-section',
-            'container-about',
-            'title-home',
-            'main-about',
-          ];
+    const theme = document.getElementById('switch');
+    const header = document.getElementById('header');
+    const footer = document.getElementById('footer');
+    const navbar = document.getElementById('navbar');
+    const containerAbout = document.getElementById('container-about');
+    const mainAbout = document.getElementById('main-about');
+    theme.addEventListener('click', () => {
+      header.classList.toggle('dark');
+      footer.classList.toggle('dark');
+      navbar.classList.toggle('dark');
+      containerAbout.classList.toggle('dark');
+      mainAbout.classList.toggle('dark');
+    });
+  </script>
+</body>
 
-          // Verifica saveMode para a checkbox
-          if (savedMode == '') {
-            theme.checked = false;
-          } else {
-            theme.checked = true;
-          }
-          elementsToToggle.forEach((elementId) => {
-            const element = document.getElementById(elementId);
-            if (element) {
-              element.classList.add(savedMode);
-            }
-          });
-        }
-      });
-
-      const theme = document.getElementById('switch');
-      const header = document.getElementById('header');
-      const footer = document.getElementById('footer');
-      const navbar = document.getElementById('navbar');
-      const containerAbout = document.getElementById('container-about');
-      const mainAbout = document.getElementById('main-about');
-      theme.addEventListener('click', () => {
-        header.classList.toggle('dark');
-        footer.classList.toggle('dark');
-        navbar.classList.toggle('dark');
-        containerAbout.classList.toggle('dark');
-        mainAbout.classList.toggle('dark');
-      });
-    </script>
-  </body>
 </html>
